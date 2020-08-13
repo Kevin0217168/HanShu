@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="98d480be-a139-4065-b15a-dac45bb6b6ac" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/HanShu.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1g34HT3SPC6aqbRwgpgnZOu5bca" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
+  </component>
+  <component name="RunManager">
+    <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="HanShu" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.model" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="479" y="163" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597330756570">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="479" y="163" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.720@0.0.1280.720" timestamp="1597330756570" />
+    <state width="464" height="438" key="DebuggerActiveHint" timestamp="1597335828969">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="464" height="438" key="DebuggerActiveHint/0.0.1280.720@0.0.1280.720" timestamp="1597335828969" />
+    <state width="1237" height="185" key="GridCell.Tab.0.bottom" timestamp="1597338619094">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="185" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1597338619094" />
+    <state width="1237" height="185" key="GridCell.Tab.0.center" timestamp="1597338619094">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="185" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1597338619094" />
+    <state width="1237" height="185" key="GridCell.Tab.0.left" timestamp="1597338619094">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="185" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1597338619094" />
+    <state width="1237" height="185" key="GridCell.Tab.0.right" timestamp="1597338619094">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="185" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1597338619094" />
+    <state width="1237" height="185" key="GridCell.Tab.1.bottom" timestamp="1597338234215">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="185" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1597338234215" />
+    <state width="1237" height="185" key="GridCell.Tab.1.center" timestamp="1597338234215">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="185" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1597338234215" />
+    <state width="1237" height="185" key="GridCell.Tab.1.left" timestamp="1597338234215">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="185" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1597338234215" />
+    <state width="1237" height="185" key="GridCell.Tab.1.right" timestamp="1597338234215">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="185" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1597338234215" />
+    <state x="208" y="95" key="IDE.errors.dialog" timestamp="1597338861793">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="208" y="95" key="IDE.errors.dialog/0.0.1280.720@0.0.1280.720" timestamp="1597338861793" />
+    <state x="0" y="0" width="1106" height="715" key="SettingsEditor" timestamp="1597331781743">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="0" y="0" width="1106" height="715" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1597331781743" />
+    <state x="391" y="66" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1597336193832">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="391" y="66" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1280.720@0.0.1280.720" timestamp="1597336193832" />
+    <state x="339" y="41" width="672" height="678" key="search.everywhere.popup" timestamp="1597334400136">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="339" y="41" width="672" height="678" key="search.everywhere.popup/0.0.1280.720@0.0.1280.720" timestamp="1597334400136" />
+  </component>
+</project>
