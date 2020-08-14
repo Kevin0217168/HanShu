@@ -13,7 +13,6 @@
 - 字母带入
 - 求一函数与x、y轴的交点坐标
 - 判断函数所经的象限
-- 计算函数在x,y轴的交点坐标
 - 计算两函数的交点坐标
 - 求解函数表达式
 - 补全函数表达式
@@ -23,20 +22,26 @@
 ```python
 # 判断函数所经的象限
 print(judgeQuadrant("y=x-2"))
+# return: [0, [1, 0], [1, 3, 4]]
 
 # 计算函数在x,y轴的交点坐标
 print(coordinatesOnTheXY("y=x-2"))
+# return: [(2, 0), (0, -2)]
 
 # 计算两函数的交点坐标
 print(computingIntersection("y=-x+3", to_Computational_expressions("y=3x-5")))
+# return: (2, 1)
 
 # 求解函数表达式
 print(evalExpression((2, 4), (4, 3)))
+# return: y = -1/2x + 5
 
 # 补全函数表达式
 print(completionExpression("y = 2x + b", (3, -2)))
+# return: y = 2x - 8
 
 # 补全坐标
 print(completionCoordinate("y = 2x+5", (-2, None)))
+# return: (-2, 1)
 
 ```
