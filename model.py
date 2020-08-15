@@ -2,6 +2,7 @@ import re
 
 import sympy
 
+
 def to_Standard_algebraic_expression(string, sub='^'):
 	"""
 	计算机形式转标准形式
@@ -32,9 +33,10 @@ def to_Standard_algebraic_expression(string, sub='^'):
 	return string
 
 
-def to_Computational_expressions(string):
+def to_Computational_expressions(string, standard=False):
 	"""
 	标准形式转计算机形式
+	:param standard: 将-,转为+(-1)
 	:param string: 传入标准形式字符串算式
 	:return: 返回补充乘号后的字符串算式
 	前：2x-3x(2-2x+2x**2)
@@ -44,8 +46,9 @@ def to_Computational_expressions(string):
 	"""
 	# 清除空格
 	string = string.replace(' ', '')
-	# 将-,转为+(-1)
-	# string = re.sub(r'(?<=[A-Za-z0-9\)])-(?=[\(A-Za-z0-9])', '+(-1)', string)
+	if standard:
+		# 将-,转为+(-1)
+		string = re.sub(r'(?<=[A-Za-z0-9\)])-(?=[\(A-Za-z0-9])', '+(-1)', string)
 	# 补充乘号
 	string = re.sub(r'(?<=[A-Za-z0-9\)])(?=[\(A-Za-z0-9])', '*', string)
 	# 将脱字符转换为乘方号
@@ -185,8 +188,8 @@ def judgeQuadrant(expression):
 		result[2].extend([2, 4])
 	
 	# 判断是否是正比例函数
-	if expression.find("+") - expression.find("-") == 0:
-		# 不含有+-号，为正比例函数
+	if len(re.findall(r"[+]", to_Computational_expressions(expression, standard=True))) == 0:
+		# 为正比例函数
 		result[0] = 1
 	else:
 		# 判断b是否大于零
@@ -287,17 +290,15 @@ def completionCoordinate(exp, pos):
 		
 
 if __name__ == "__main__":
-	print(to_Computational_expressions("y = -2/3x - 2"))
-	print(computingIntersection("y=-2/3x-2", "y=3/2x-1/2"))
-	# # 判断函数所经的象限
-	# print(judgeQuadrant("y=x-2"))
-	# # 计算函数在x,y轴的交点坐标
-	# print(coordinatesOnTheXY("y = -3x-5"))
-	# # 计算两函数的交点坐标
-	# print(computingIntersection("y=-x+3", to_Computational_expressions("y=3x-5")))
-	# # 求解函数表达式
-	# print(evalExpression((2, 4), (4, 3)))
-	# # 补全函数表达式
-	# print(completionExpression("y = 2x + b", (3, -2)))
-	# # 补全坐标
-	# print(completionCoordinate("y = 2x+5", (-2, None)))
+	# 判断函数所经的象限
+	print(judgeQuadrant("y=x-2"))
+	# 计算函数在x,y轴的交点坐标
+	print(coordinatesOnTheXY("y = -3x-5"))
+	# 计算两函数的交点坐标
+	print(computingIntersection("y=-x+3", "y=3x-5"))
+	# 求解函数表达式
+	print(evalExpression((2, 4), (4, 3)))
+	# 补全函数表达式
+	print(completionExpression("y = 2x + b", (3, -2)))
+	# 补全坐标
+	print(completionCoordinate("y = 2x+5", (-2, None)))
