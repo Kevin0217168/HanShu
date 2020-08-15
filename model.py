@@ -2,7 +2,6 @@ import re
 
 import sympy
 
-
 def to_Standard_algebraic_expression(string, sub='^'):
 	"""
 	计算机形式转标准形式
@@ -105,7 +104,7 @@ def getSymbol(string):
 		return None
 
 
-def solveQuestions(expressions: list, letter: str):
+def solveQuestions(expressions, letter: str):
 	"""
 	解方程
 	:param expressions: 待解表达式列表
@@ -114,13 +113,20 @@ def solveQuestions(expressions: list, letter: str):
 	"""
 	# 将方程转换为标准形式(移项)
 	for n in range(len(expressions)):
-		expressions[n] = transposition(expressions[n])
+		expressions[n] = transposition(to_Computational_expressions(expressions[n]))
 	
 	# 声明未知数
 	letter_l = getSymbol(letter)
 	for i in letter_l:
 		exec('' + i + ' = sympy.Symbol(\'' + i + '\')')
-	
+
+	# 提取分数并格式化
+	for n in range(len(expressions)):
+		# 提取分数
+		rational_list = re.findall(r"(?<=[\(\=\-\+*/])\d+/\d+(?=[a-zA-z\+\-\*/\)]?)", expressions[n])
+		for i in rational_list:
+			expressions[n] = expressions[n].replace(i, "sympy.Rational('" + i + "')")
+
 	# 字符串计算
 	ex = []
 	for n in range(len(expressions)):
@@ -143,7 +149,7 @@ def coordinatesOnTheXY(expression: str):
 	"""
 	pos_list = []
 	# 求x轴交点，则y坐标为零
-	expression1 = subOfNumForLetter(expression, 'y', 0)
+	expression1 = subOfNumForLetter(to_Computational_expressions(expression), 'y', 0)
 	# 解方程，取x的解
 	x1 = list(solveQuestions([expression1], 'x').items())[0][1]
 	pos_list.append((x1, 0))
@@ -165,6 +171,7 @@ def judgeQuadrant(expression):
 	eg:[0, [1, 0] [1, 3, 4]]
 	"""
 	result = [0, [None, None], []]
+	expression = to_Computational_expressions(expression)
 	# 判断k是否大于零
 	if expression[expression.find("=") + 1] == "-":
 		result[1][0] = 0
@@ -207,7 +214,7 @@ def computingIntersection(exp1, exp2):
 	:return: 交点坐标(x, y)
 	"""
 	# 解二元方程
-	result = list(solveQuestions([exp1, exp2], "x y").items())
+	result = list(solveQuestions([to_Computational_expressions(exp1), to_Computational_expressions(exp2)], "x y").items())
 	return result[0][1], result[1][1]
 
 
@@ -280,15 +287,17 @@ def completionCoordinate(exp, pos):
 		
 
 if __name__ == "__main__":
-	# 判断函数所经的象限
-	print(judgeQuadrant("y=x-2"))
-	# 计算函数在x,y轴的交点坐标
-	print(coordinatesOnTheXY("y=x-2"))
-	# 计算两函数的交点坐标
-	print(computingIntersection("y=-x+3", to_Computational_expressions("y=3x-5")))
-	# 求解函数表达式
-	print(evalExpression((2, 4), (4, 3)))
-	# 补全函数表达式
-	print(completionExpression("y = 2x + b", (3, -2)))
-	# 补全坐标
-	print(completionCoordinate("y = 2x+5", (-2, None)))
+	print(to_Computational_expressions("y = -2/3x - 2"))
+	print(computingIntersection("y=-2/3x-2", "y=3/2x-1/2"))
+	# # 判断函数所经的象限
+	# print(judgeQuadrant("y=x-2"))
+	# # 计算函数在x,y轴的交点坐标
+	# print(coordinatesOnTheXY("y = -3x-5"))
+	# # 计算两函数的交点坐标
+	# print(computingIntersection("y=-x+3", to_Computational_expressions("y=3x-5")))
+	# # 求解函数表达式
+	# print(evalExpression((2, 4), (4, 3)))
+	# # 补全函数表达式
+	# print(completionExpression("y = 2x + b", (3, -2)))
+	# # 补全坐标
+	# print(completionCoordinate("y = 2x+5", (-2, None)))

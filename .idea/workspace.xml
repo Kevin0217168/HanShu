@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98d480be-a139-4065-b15a-dac45bb6b6ac" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/HanShu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HanShu.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
@@ -25,14 +27,15 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -62,13 +65,27 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <created>1597485666592</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597485666592</updated>
+    </task>
+    <servers />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="743" y="226" key="#Python" timestamp="1597486117958">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="743" y="226" key="#Python/0.0.1920.1040@0.0.1920.1040" timestamp="1597486117958" />
     <state x="479" y="163" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597330756570">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -77,46 +94,55 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="715" height="438" key="DebuggerActiveHint/0.0.1280.720@0.0.1280.720" timestamp="1597418728007" />
-    <state width="1237" height="183" key="GridCell.Tab.0.bottom" timestamp="1597423107905">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="1898" height="276" key="GridCell.Tab.0.bottom" timestamp="1597488414372">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="183" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1597423107905" />
-    <state width="1237" height="183" key="GridCell.Tab.0.center" timestamp="1597423107904">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="1898" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597488414372" />
+    <state width="1898" height="276" key="GridCell.Tab.0.center" timestamp="1597488414371">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="183" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1597423107904" />
-    <state width="1237" height="183" key="GridCell.Tab.0.left" timestamp="1597423107904">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="1898" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597488414371" />
+    <state width="1898" height="276" key="GridCell.Tab.0.left" timestamp="1597488414371">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="183" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1597423107904" />
-    <state width="1237" height="183" key="GridCell.Tab.0.right" timestamp="1597423107904">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="1898" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597488414371" />
+    <state width="1898" height="276" key="GridCell.Tab.0.right" timestamp="1597488414372">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="183" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1597423107904" />
-    <state width="1237" height="196" key="GridCell.Tab.1.bottom" timestamp="1597420880558">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="1898" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597488414372" />
+    <state width="1898" height="342" key="GridCell.Tab.1.bottom" timestamp="1597488376320">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="196" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1597420880558" />
-    <state width="1237" height="196" key="GridCell.Tab.1.center" timestamp="1597420880558">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="1898" height="342" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597488376320" />
+    <state width="1898" height="342" key="GridCell.Tab.1.center" timestamp="1597488376320">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="196" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1597420880558" />
-    <state width="1237" height="196" key="GridCell.Tab.1.left" timestamp="1597420880558">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="1898" height="342" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597488376320" />
+    <state width="1898" height="342" key="GridCell.Tab.1.left" timestamp="1597488376320">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="196" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1597420880558" />
-    <state width="1237" height="196" key="GridCell.Tab.1.right" timestamp="1597420880558">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="1898" height="342" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597488376320" />
+    <state width="1898" height="342" key="GridCell.Tab.1.right" timestamp="1597488376320">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1237" height="196" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1597420880558" />
+    <state width="1898" height="342" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597488376320" />
     <state x="208" y="95" key="IDE.errors.dialog" timestamp="1597416818751">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="208" y="95" key="IDE.errors.dialog/0.0.1280.720@0.0.1280.720" timestamp="1597416818751" />
-    <state x="0" y="0" width="1106" height="715" key="SettingsEditor" timestamp="1597331781743">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state x="0" y="0" width="1106" height="715" key="SettingsEditor" timestamp="1597486604620">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="0" width="1106" height="715" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1597331781743" />
+    <state x="0" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597486604620" />
     <state x="391" y="66" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1597336193832">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
