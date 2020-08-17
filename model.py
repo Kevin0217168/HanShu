@@ -57,7 +57,7 @@ def to_Computational_expressions(string, standard=False):
 
 
 def get_Symbol(string):
-	a = re.findall(r'[a-zA-z]', string)
+	a = re.findall(r'[a-zA-Z]', string)
 	if a is not None:
 		return list(set(a))
 	else:
@@ -99,14 +99,6 @@ def transposition(expression: str):
 	return expression
 
 
-def getSymbol(string):
-	a = re.findall(r'[a-zA-z]', string)
-	if a is not None:
-		return list(set(a))
-	else:
-		return None
-
-
 def solveQuestions(expressions, letter: str):
 	"""
 	解方程
@@ -119,17 +111,17 @@ def solveQuestions(expressions, letter: str):
 		expressions[n] = transposition(to_Computational_expressions(expressions[n]))
 	
 	# 声明未知数
-	letter_l = getSymbol(letter)
+	letter_l = get_Symbol(letter)
 	for i in letter_l:
 		exec('' + i + ' = sympy.Symbol(\'' + i + '\')')
-
+	
 	# 提取分数并格式化
 	for n in range(len(expressions)):
 		# 提取分数
 		rational_list = re.findall(r"(?<=[\(\=\-\+*/])\d+/\d+(?=[a-zA-z\+\-\*/\)]?)", expressions[n])
 		for i in rational_list:
 			expressions[n] = expressions[n].replace(i, "sympy.Rational('" + i + "')")
-
+	
 	# 字符串计算
 	ex = []
 	for n in range(len(expressions)):
@@ -217,7 +209,8 @@ def computingIntersection(exp1, exp2):
 	:return: 交点坐标(x, y)
 	"""
 	# 解二元方程
-	result = list(solveQuestions([to_Computational_expressions(exp1), to_Computational_expressions(exp2)], "x y").items())
+	result = list(
+		solveQuestions([to_Computational_expressions(exp1), to_Computational_expressions(exp2)], "x y").items())
 	return result[0][1], result[1][1]
 
 
@@ -287,7 +280,7 @@ def completionCoordinate(exp, pos):
 		exp = subOfNumForLetter(to_Computational_expressions(exp), "x", pos[0])
 		# 解一元方程
 		return pos[0], list(solveQuestions([exp], "y").items())[0][1]
-		
+
 
 if __name__ == "__main__":
 	# 判断函数所经的象限
